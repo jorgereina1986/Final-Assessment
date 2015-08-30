@@ -3,28 +3,18 @@ package nyc.c4q;
 /**
  * Created by c4q-jorgereina on 8/30/15.
  */
-public class Person {
+public class Person2 {
     public String firstName;
     public String lastName;
     public House house;
-    public int hexValue;
 
-    public Person(String firstName, String lastName, House house, int hexValue) {
+    public Person2(String lastName, String firstName, House house) {
         this.firstName = firstName;
-        this.lastName = lastName;
-        this.house = house;
-        this.hexValue = hexValue;
-
+        this.lastName  = lastName;
+        this.house     = house;
     }
 
 
-    public int getHexValue() {
-        return hexValue;
-    }
-
-    public void setHexValue(int hexValue) {
-        this.hexValue = hexValue;
-    }
 
     public String getFirstName() {
         return firstName;
@@ -49,6 +39,4 @@ public class Person {
     public void setHouse(House house) {
         this.house = house;
     }
-
-
 }
